@@ -4,15 +4,49 @@
 
 #ifndef GAME_H
 #define GAME_H
+#include <fstream>
+
 #include "Deck.h"
 #include "Hand.h"
 #include <iostream>
 
 class Game {
+private:
+    Deck deck;
+    Hand playerHand;
+    Hand dealerHand;
+    int totalGames;
+    int playerWins;
+    int dealerWins;
+    int ties;
 public:
-    Deck deck;Hand playerHand;
-    Hand dealerHand; int pWins; int dWins; int pushes;
+     int pWins; int dWins; int pushes;
+    Game() : totalGames(0), playerWins(0), dealerWins(0), ties(0) {
+        loadStats();  // Load on startup
+    }
 
+    ~Game() {
+        saveStats();  // Save on exit
+    }
+
+    void saveStats() {
+        std::ofstream outFile("game_stats.txt");
+        if (outFile.is_open()) {
+            outFile << totalGames << std::endl;
+            outFile << playerWins << std::endl;
+            outFile << dealerWins << std::endl;
+            outFile << ties << std::endl;
+            outFile.close();
+        }
+    }
+
+    void loadStats() {
+        std::ifstream inFile("game_stats.txt");
+        if (inFile.is_open()) {
+            inFile >> totalGames >> playerWins >> dealerWins >> ties;
+            inFile.close();
+        }
+    }
 
 
     // Start a new game
@@ -156,5 +190,8 @@ public:
             std::cout << "Dealer has blackjack! Dealer wins!" << std::endl;
         }
     }
+
+
+
 };
 #endif //GAME_H

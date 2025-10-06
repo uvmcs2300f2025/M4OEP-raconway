@@ -13,4 +13,5 @@ add_executable(M1OEP_raconway main.cpp
         Game.cpp
         Game.h
         Card.cpp
+        testing.cpp
 )

@@ -79,6 +79,12 @@ build CMakeFiles/M1OEP_raconway.dir/Card.cpp.obj: CXX_COMPILER__M1OEP_raconway_u
   OBJECT_DIR = CMakeFiles\M1OEP_raconway.dir
   OBJECT_FILE_DIR = CMakeFiles\M1OEP_raconway.dir
 
+build CMakeFiles/M1OEP_raconway.dir/testing.cpp.obj: CXX_COMPILER__M1OEP_raconway_unscanned_Debug E$:/M1OEP-raconway/testing.cpp || cmake_object_order_depends_target_M1OEP_raconway
+  DEP_FILE = CMakeFiles\M1OEP_raconway.dir\testing.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\M1OEP_raconway.dir
+  OBJECT_FILE_DIR = CMakeFiles\M1OEP_raconway.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target M1OEP_raconway
@@ -87,7 +93,7 @@ build CMakeFiles/M1OEP_raconway.dir/Card.cpp.obj: CXX_COMPILER__M1OEP_raconway_u
 #############################################
 # Link the executable M1OEP_raconway.exe
 
-build M1OEP_raconway.exe: CXX_EXECUTABLE_LINKER__M1OEP_raconway_Debug CMakeFiles/M1OEP_raconway.dir/main.cpp.obj CMakeFiles/M1OEP_raconway.dir/Player.cpp.obj CMakeFiles/M1OEP_raconway.dir/Hand.cpp.obj CMakeFiles/M1OEP_raconway.dir/Game.cpp.obj CMakeFiles/M1OEP_raconway.dir/Card.cpp.obj
+build M1OEP_raconway.exe: CXX_EXECUTABLE_LINKER__M1OEP_raconway_Debug CMakeFiles/M1OEP_raconway.dir/main.cpp.obj CMakeFiles/M1OEP_raconway.dir/Player.cpp.obj CMakeFiles/M1OEP_raconway.dir/Hand.cpp.obj CMakeFiles/M1OEP_raconway.dir/Game.cpp.obj CMakeFiles/M1OEP_raconway.dir/Card.cpp.obj CMakeFiles/M1OEP_raconway.dir/testing.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\M1OEP_raconway.dir

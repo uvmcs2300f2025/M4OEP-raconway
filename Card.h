@@ -58,6 +58,7 @@ public:
             case CLUBS: return "Clubs";
             case SPADES: return "Spades";
         }
+        return "";
     }
 
     // Get rank as string
@@ -76,7 +77,9 @@ public:
             case JACK: return "Jack";
             case QUEEN: return "Queen";
             case KING: return "King";
+
         }
+        return nullptr;
     }
     // Convert to string
     std::string toString() const {
