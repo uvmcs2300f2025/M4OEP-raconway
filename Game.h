@@ -20,7 +20,7 @@ private:
     int dealerWins;
     int ties;
 public:
-     int pWins; int dWins; int pushes;
+    int pWins; int dWins; int pushes;
     Game() : totalGames(0), playerWins(0), dealerWins(0), ties(0) {
         loadStats();  // Load on startup
     }
@@ -57,11 +57,14 @@ public:
         char playAgain = 'y';
         while (playAgain == 'y' || playAgain == 'Y') {
             playRound();
+
             std::cout << "\nPlay another round? (y/n): ";
             std::cin >> playAgain;
             std::cout << std::endl;
         }
         std::cout << "Thanks for playing!" << std::endl;
+        visualizeStatistics();
+
     }
     // Deal initial 2 cards to each player
     void dealInitialCards() {
@@ -125,7 +128,7 @@ public:
 
     // Determine the winner of the round
     void determineWinner() {
-        std::cout << "\n=== Final Result ===" << std::endl;
+        std::cout << "\n Final Result " << std::endl;
         displayHands(false);
 
         int playerValue = playerHand.getValue();
@@ -146,6 +149,8 @@ public:
 
     // Play a single round
     void playRound() {
+
+
         // Clear hands and check if deck needs reshuffling
         playerHand.clear();
         dealerHand.clear();
@@ -190,8 +195,29 @@ public:
             std::cout << "Dealer has blackjack! Dealer wins!" << std::endl;
         }
     }
+    void showVisualization() {
+        saveStats();
+        system("python statsVisual.py");
+    }
+    // Call Python script to visualize statistics
+    void visualizeStatistics() {
 
 
+        saveStats();
+        std::cout << "\nGenerating statistics" << std::endl;
 
+        int result = system("python statsVisual.py");
+
+        if (result == 0) {
+            std::cout << "Success" << std::endl;
+            std::cout << "Opening" << std::endl;
+            // Try to open the image (Windows)
+            system("start stats_chart.png");
+        } else {
+            std::cout << "Error: Could not generate chart" << std::endl;
+
+        }
+
+    }
 };
 #endif //GAME_H

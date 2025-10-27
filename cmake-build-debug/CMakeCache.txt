@@ -251,6 +251,12 @@ M1OEP_raconway_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 M1OEP_raconway_SOURCE_DIR:STATIC=E:/M1OEP-raconway
 
+//No help, variable specified on the command line.
+Python3_EXECUTABLE:UNINITIALIZED=E:/Downloads/Speed-Test-raconway-main/Speed-Test-raconway-main/.venv/Scripts/python.exe
+
+//No help, variable specified on the command line.
+Python_EXECUTABLE:UNINITIALIZED=E:/Downloads/Speed-Test-raconway-main/Speed-Test-raconway-main/.venv/Scripts/python.exe
+
 
 ########################
 # INTERNAL cache entries

@@ -13,6 +13,8 @@
 class Hand {
 private:
     std::vector<Card> cards;
+    bool doubled;
+    int bet;
 
 public:
     // Add a card to the hand
@@ -77,9 +79,45 @@ public:
     size_t size() const {
         return cards.size();
     }
+    // Split hand into two hands
+    // Check if hand can be split (two cards of same rank)
+    bool canSplit() const {
+        return cards.size() == 2 &&
+               cards[0].getRank() == cards[1].getRank();
+    }
+    Hand split() {
+        Hand newHand;
+        if (canSplit()) {
+            newHand.addCard(cards[1]);
+            cards.pop_back();
+            newHand.bet = bet;
+        }
+        return newHand;
+    }
 
+    // Double down
+    void doubleDown() {
+        doubled = true;
+        bet *= 2;
+    }
 
+    // Check if hand is doubled
+    bool isDoubled() const {
+        return doubled;
+    }
+
+    // Get bet amount
+    int getBet() const {
+        return bet;
+    }
+
+    // Set bet amount
+    void setBet(int amount) {
+        bet = amount;
+    }
 };
+
+
 
 
 

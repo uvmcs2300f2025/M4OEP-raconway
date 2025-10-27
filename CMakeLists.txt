@@ -3,6 +3,8 @@ project(M1OEP_raconway)
 
 set(CMAKE_CXX_STANDARD 17)
 
+configure_file(statsVisual.py statsVisual.py COPYONLY)
+
 add_executable(M1OEP_raconway main.cpp
         Card.h
         Player.h
