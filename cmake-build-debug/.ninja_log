@@ -1,13 +1,10 @@
 # ninja log v6
 14	45	7832399513164445	CMakeFiles/M1OEP_raconway.dir/Player.cpp.obj	23cf0029a30734a
-1	190	7832403785037548	build.ninja	c2ae1679f45d119b
 19	220	7832399513214458	CMakeFiles/M1OEP_raconway.dir/Card.cpp.obj	8e48c91b243e8874
+2	208	7832407538336991	build.ninja	c2ae1679f45d119b
 16	314	7832399513174443	CMakeFiles/M1OEP_raconway.dir/Hand.cpp.obj	ce85f579997f1020
-12	490	7832401353478604	CMakeFiles/M1OEP_raconway.dir/Game.cpp.obj	e0f28cf3e3d5311e
-10	585	7832401353458601	CMakeFiles/M1OEP_raconway.dir/main.cpp.obj	4578a1d785dc42a9
-585	664	7832401359210758	M1OEP_raconway.exe	15e8a996a3f1d454
-21	50	7832399513224468	CMakeFiles/M1OEP_raconway.dir/testing.cpp.obj	639124fbbd0a35c
-2	208	7832403785037548	build.ninja	c2ae1679f45d119b
 20	468	7832403785677741	CMakeFiles/M1OEP_raconway.dir/Game.cpp.obj	e0f28cf3e3d5311e
 19	569	7832403785657740	CMakeFiles/M1OEP_raconway.dir/main.cpp.obj	4578a1d785dc42a9
 569	644	7832403791159394	M1OEP_raconway.exe	15e8a996a3f1d454
+21	50	7832399513224468	CMakeFiles/M1OEP_raconway.dir/testing.cpp.obj	639124fbbd0a35c
+1	204	7832407538336991	build.ninja	c2ae1679f45d119b

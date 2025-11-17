@@ -149,9 +149,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "E:/CLion 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
-		},
-		{
-			"path" : "statsVisual.py"
 		}
 	],
 	"kind" : "cmakeFiles",

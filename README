@@ -2,13 +2,14 @@
 - Your name(s)
 Rakesh Conway
 - A summary of your program, including a list of Module 2 concepts used
-My project is blackjack against an AI dealer, the concepts I used in module 2 were polymorphisim, testing, and IO
+My project is blackjack against an AI dealer, the concepts I used in module 4 were graphics and open gl
 - Any known bugs at time of submission
 n/a
 - Future work (how you could expand the program with more time)
-Add more players, add splitting and doubling down, add a betting system
+final project stuff
 - Citations for any code not written by you or the instructor
 https://github.com/uvmcs2300f2025/Monster-raconway/blob/main/Water_Monsters/Water_Monster_Testing.cpp
+used graphics classes from Confetti and runner
 monsters testing Template
 - The grade you think you have earned, based on the grading rubric below, with justification
-I think I deserve a low B I have mostly everything in the rubric and just messed up the push timing.
+I think I deserve a B I have mostly everything in the rubric and just messed up the push timing.
